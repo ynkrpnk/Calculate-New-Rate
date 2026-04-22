@@ -1,5 +1,11 @@
 "use strict";
 
+/**
+ * @param {*} winnerRate Поточний рейтинг переможця.
+ * @param {*} loserRate Поточний рейтинг того, хто програв.
+ * @returns {number} Оновлений рейтинг переможця, округлений до одного знака після коми або NaN
+ */
+
 const calculateRate = (winnerRate, loserRate) =>{
 if (typeof winnerRate !== "number" ||
     typeof loserRate !== "number" || winnerRate < 0 || loserRate < 0 ){
